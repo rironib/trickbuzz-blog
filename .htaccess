@@ -1,0 +1,43 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Rewrite Rules for Specific Paths
+    RewriteRule ^$ index.html [QSA,L]
+    RewriteRule ^post/20231201/$ post/01.html [QSA,L]
+    RewriteRule ^post/20231202/$ post/02.html [QSA,L]
+    RewriteRule ^post/20231203/$ post/03.html [QSA,L]
+    RewriteRule ^post/20231204/$ post/04.html [QSA,L]
+    RewriteRule ^post/20231205/$ post/05.html [QSA,L]
+    RewriteRule ^post/20231206/$ post/06.html [QSA,L]
+    RewriteRule ^post/20231207/$ post/07.html [QSA,L]
+    RewriteRule ^post/20231208/$ post/08.html [QSA,L]
+    RewriteRule ^post/20231209/$ post/09.html [QSA,L]
+    RewriteRule ^post/20231210/$ post/10.html [QSA,L]
+
+    # Redirect Rules
+    RewriteRule ^index\.html$ / [R=301,L]
+    RewriteRule ^post$ / [R=301,L]
+    RewriteRule ^post/?$ / [R=301,L]
+    RewriteRule ^post/20231201$ post/20231201/ [R=301,L]
+    RewriteRule ^post/20231202$ post/20231202/ [R=301,L]
+    RewriteRule ^post/20231203$ post/20231203/ [R=301,L]
+    RewriteRule ^post/20231204$ post/20231204/ [R=301,L]
+    RewriteRule ^post/20231205$ post/20231205/ [R=301,L]
+    RewriteRule ^post/20231206$ post/20231206/ [R=301,L]
+    RewriteRule ^post/20231207$ post/20231207/ [R=301,L]
+    RewriteRule ^post/20231208$ post/20231208/ [R=301,L]
+    RewriteRule ^post/20231209$ post/20231209/ [R=301,L]
+    RewriteRule ^post/20231210$ post/20231210/ [R=301,L]
+
+
+    # Custom Rule for 404 errors
+    ErrorDocument 404 /404.php
+
+    # Disable directory listing
+    Options -Indexes
+
+</IfModule>

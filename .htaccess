@@ -17,6 +17,7 @@
     RewriteRule ^post/20231208/$ post/08.html [QSA,L]
     RewriteRule ^post/20231209/$ post/09.html [QSA,L]
     RewriteRule ^post/20231210/$ post/10.html [QSA,L]
+    RewriteRule ^post/20231211/$ post/11.html [QSA,L]
 
     # Redirect Rules
     RewriteRule ^index\.html$ / [R=301,L]
@@ -32,6 +33,7 @@
     RewriteRule ^post/20231208$ post/20231208/ [R=301,L]
     RewriteRule ^post/20231209$ post/20231209/ [R=301,L]
     RewriteRule ^post/20231210$ post/20231210/ [R=301,L]
+    RewriteRule ^post/20231211$ post/20231211/ [R=301,L]
 
 
     # Custom Rule for 404 errors

@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>          `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-1");
 
@@ -39,7 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>            `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-2");
 
@@ -63,7 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>            `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-3");
 
@@ -87,7 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>            `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-4");
 
@@ -111,7 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>            `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-5");
 
@@ -135,7 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>            `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-6");
 
@@ -159,7 +165,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>            `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-7");
 
@@ -183,7 +190,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </p>
       </div>
   </div>
-</a>            `;
+</a>
+`;
 
   var postContainer = document.getElementById("post-8");
 
@@ -208,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
   </div>
 </a>
-            `;
+`;
 
   var postContainer = document.getElementById("post-9");
 
@@ -233,9 +241,31 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
   </div>
 </a>
-            `;
+`;
 
   var postContainer = document.getElementById("post-10");
 
   postContainer.appendChild(postCardContainer);
 });
+
+// 11
+// document.addEventListener("DOMContentLoaded", function () {
+//   const postContainer = document.getElementById("post-11");
+//   const postCardContainer = document.createElement("div");
+//   postCardContainer.innerHTML = `
+//   <a href="/post/20231211/">
+//   <div class="postCard">
+//       <img src="/images/thumbnail-11.webp" alt="thumbnail-11">
+//       <div class="postInfo">
+//           <h2 class="postName">
+//               <span>11</span>
+//               Exploring the Power of Nuxt.js: A Comprehensive Guide
+//           </h2>
+//           <p class="postExcerpt">
+//           Nuxt.js is a powerful and versatile framework for building Vue.js applications. It extends the capabilities of Vue.js by providing a structured and opinionated framework that simplifies the development process. In this article....
+//           </p>
+//       </div>
+//   </div>
+// </a>`;
+//   postContainer.appendChild(postCardContainer);
+// });
